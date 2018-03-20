@@ -1,0 +1,176 @@
+<testcases>
+ <testcase>
+  <id>1</id>
+  <query>Q(X, Y) :- A1(X, X1), A2(X1, X2), A3(X2, X3), A4(X3, X4), A5(X4, X5), A6(X5, Y)</query>
+  <view>V1(X, Y) :- A1(X, Y)</view>
+  <view>V2(X, Y) :- A2(X, Y1), A3(Y1, Y)</view>
+  <view>V3(X, Y) :- A4(X, Y)</view>
+  <view>V4(X, Y) :- A5(X, Y)</view>
+  <view>V5(X, Y) :- A6(X, Y)</view>
+  <view>V6(X, Y) :- A6(X, Y)</view>
+  <view>V7(X, Y) :- A6(X, Y)</view>
+  <view>V8(X, Y) :- A1(X, Y)</view>
+  <information/>
+ </testcase>
+<testcase>
+  <id>2</id>
+  <query>Q(X) :- cites(x, y), cites(y, x), sameTopic(x, y)</query>
+  <view>V4(a) :- cites(a, b), cites(b, a)</view>
+  <view>V5(c, d) :- sameTopic(c, d)</view>
+  <view>V6(f, h) :- cites(f, g), cites(g, h), sameTopic(f, g)</view>
+  <information/>
+ </testcase>
+ <testcase>
+  <id>3</id>
+  <query>Q(X) :- e1(x,y), e2(y,x), e3(x,z)</query>
+  <view>V1(a,b) :- e1(a,b)</view>
+  <view>V2(a,b) :- e2(a,b)</view>
+  <view>V3(a,b) :- e3(a,b)</view>
+  <information/>
+ </testcase>
+ <testcase>
+  <id>4</id>
+  <query>Q(x) :- e1(x,y), e2(y,z)</query>
+  <view>V(a,c,d) :- e1(a,b), e2(b,c), e2(b,d)</view>
+  <information/>
+ </testcase>
+ <testcase>
+  <id>5</id>
+  <query>Q(x) :- e1(x,y), e2(y,x)</query>
+  <view>V1(a) :- e1(a,b)</view>
+  <view>V2(a,b) :- e1(a,b)</view>
+  <view>V3(b) :- e1(a,b),e2(b,a)</view>
+  <view>V4(a,b) :- e1(a,b),e2(b,a)</view>
+  <information/>
+ </testcase>
+ <testcase>
+  <id>6</id>
+  <query>Q(X, Y) :- A1(X, X1), A2(X1,X2), A3(X2,X3), A4(X3,X4), A5(X4,X5), A6(X5,X6), A7(X6,X7), A8(X7,X8), A9(X8,X9), A10(X9,Y)</query>
+  <view>V1(X, Y) :- A1(X, X1), A2(X1,X2), A3(X2,X3), A4(X3,X4), A5(X4,X5), A6(X5,X6), A7(X6,X7), A8(X7,X8), A9(X8,X9), A10(X9,Y)</view>
+  <view>V2(X, Y) :- A1(X, X1), A2(X1,X2), A3(X2,X3), A4(X3,X4), A5(X4,X5), A6(X5,X6), A7(X6,X7), A8(X7,X8), A9(X8,X9), A10(X9,Y)</view>
+  <view>V3(X, Y) :- A1(X, X1), A2(X1,X2), A3(X2,X3), A4(X3,X4), A5(X4,X5), A6(X5,X6), A7(X6,X7), A8(X7,X8), A9(X8,X9), A10(X9,Y)</view>
+  <view>V4(X, Y) :- A1(X, X1), A2(X1,X2), A3(X2,X3), A4(X3,X4), A5(X4,X5), A6(X5,X6), A7(X6,X7), A8(X7,X8), A9(X8,X9), A10(X9,Y)</view>
+  <information/>
+ </testcase>
+ <testcase>
+  <id>7</id>
+  <query>Q(X, Y) :- A1(X, X1), A2(X1,X2), A3(X2,X3), A4(X3,X4), A5(X4,X5), A6(X5,X6), A7(X6,X7), A8(X7,X8), A9(X8,X9), A10(X9,X10), A11(X10, X11), A12 (X11, Y)</query>
+  <view>V1(X, Y) :- A1(X, X1), A2(X1,X2), A3(X2,Y)</view>
+  <view>V2(X, Y) :- A4(X, X1), A5(X1,X2), A6(X2,Y)</view>
+  <view>V3(X, Y) :- A7(X, X1), A8(X1,X2), A9(X2,Y)</view>
+  <view>V4(X, Y) :- A10(X, X1), A11(X1,X2), A12(X2,Y)</view>
+  <view>V5(X, Y) :- A1(X, X1), A2(X1,X2), A3(X2,Y)</view>
+  <view>V6(X, Y) :- A4(X, X1), A5(X1,X2), A6(X2,Y)</view>
+  <view>V7(X, Y) :- A7(X, X1), A8(X1,X2), A9(X2,Y)</view>
+  <view>V8(X, Y) :- A10(X, X1), A11(X1,X2), A12(X2,Y)</view>
+  <view>V9(X, Y) :- A1(X, X1), A2(X1,X2), A3(X2,Y)</view>
+  <view>V10(X, Y) :- A4(X, X1), A5(X1,X2), A6(X2,Y)</view>
+  <view>V11(X, Y) :- A7(X, X1), A8(X1,X2), A9(X2,Y)</view>
+  <view>V12(X, Y) :- A10(X, X1), A11(X1,X2), A12(X2,Y)</view>
+  <information/>
+ </testcase>
+ <testcase>
+  <id>8</id>
+  <query>Q(X, Y) :- A1(X, X1), A2(X1,X2), A3(X2,X3), A4(X3,X4), A5(X4,X5), A6(X5,X6), A7(X6,X7), A8(X7,X8), A9(X8,X9), A10(X9,X10), A11(X10, X11), A12 (X11, Y)</query>
+  <view>V1(X, Y) :- A1(X, X1), A2(X1,X2), A3(X2,Y)</view>
+  <view>V2(X, Y) :- A4(X, X1), A5(X1,X2), A6(X2,Y)</view>
+  <view>V3(X, Y) :- A7(X, X1), A8(X1,X2), A9(X2,Y)</view>
+  <view>V4(X, Y) :- A10(X, X1), A11(X1,X2), A12(X2,Y)</view>
+  <view>V5(X, Y) :- A1(X, X1), A2(X1,X2), A3(X2,Y)</view>
+  <view>V6(X, Y) :- A4(X, X1), A5(X1,X2), A6(X2,Y)</view>
+  <view>V7(X, Y) :- A7(X, X1), A8(X1,X2), A9(X2,Y)</view>
+  <view>V8(X, Y) :- A10(X, X1), A11(X1,X2), A12(X2,Y)</view>
+  <view>V9(X, Y) :- A1(X, X1), A2(X1,X2), A3(X2,Y)</view>
+  <view>V10(X, Y) :- A4(X, X1), A5(X1,X2), A6(X2,Y)</view>
+  <view>V11(X, Y) :- A7(X, X1), A8(X1,X2), A9(X2,Y)</view>
+  <view>V12(X, Y) :- A10(X, X1), A11(X1,X2), A12(X2,Y)</view>
+  <view>V13(X, Y) :- A1(X, X1), A2(X1,X2), A3(X2,Y)</view>
+  <view>V14(X, Y) :- A4(X, X1), A5(X1,X2), A6(X2,Y)</view>
+  <view>V15(X, Y) :- A7(X, X1), A8(X1,X2), A9(X2,Y)</view>
+  <view>V16(X, Y) :- A10(X, X1), A11(X1,X2), A12(X2,Y)</view>
+  <view>V17(X, Y) :- A1(X, X1), A2(X1,X2), A3(X2,Y)</view>
+  <view>V18(X, Y) :- A4(X, X1), A5(X1,X2), A6(X2,Y)</view>
+  <view>V19(X, Y) :- A7(X, X1), A8(X1,X2), A9(X2,Y)</view>
+  <view>V20(X, Y) :- A10(X, X1), A11(X1,X2), A12(X2,Y)</view>
+  <information/>
+ </testcase>
+<testcase>
+  <id>9</id>
+  <query>Q(X, Y) :- A1(X, X1), A2(X1, X2), A3(X2, X3), A4(X3, X4), A5(X4, X5), A6(X5, X6), A7(X6, X7), A8(X7, X8), A9(X8, X9), A10(X9, X10), A11(X10, X11), A12(X11, Y)</query>
+  <view>V1(X, Y) :- A1(X, Y)</view>
+  <view>V2(X, Y) :- A2(X, Y)</view>
+  <view>V3(X, Y) :- A3(X, Y)</view>
+  <view>V4(X, Y) :- A4(X, Y)</view>
+  <view>V5(X, Y) :- A5(X, Y)</view>
+  <view>V6(X, Y) :- A6(X, Y)</view>
+  <view>V7(X, Y) :- A7(X, Y)</view>
+  <view>V8(X, Y) :- A8(X, Y)</view>
+  <view>V9(X, Y) :- A9(X, Y)</view>
+  <view>V10(X, Y) :- A10(X, Y)</view>
+  <view>V11(X, Y) :- A11(X, Y)</view>
+  <view>V12(X, Y) :- A12(X, Y)</view>
+  <information/>
+ </testcase> 
+ <testcase>
+  <id>10</id>
+  <query>Q(X, Y) :- A1(X, X1), A2(X1, X2), A3(X2, X3), A4(X3, X4), A5(X4, X5), A6(X5, X6), A7(X6, X7), A8(X7, X8), A9(X8, X9), A10(X9, X10), A11(X10, X11), A12(X11, Y)</query>
+  <view>V1(X, Y) :- A1(X, Y)</view>
+  <view>V2(X, Y) :- A2(X, Y)</view>
+  <view>V3(X, Y) :- A3(X, Y)</view>
+  <view>V4(X, Y) :- A4(X, Y)</view>
+  <view>V5(X, Y) :- A5(X, Y)</view>
+  <view>V6(X, Y) :- A6(X, Y)</view>
+  <view>V7(X, Y) :- A7(X, Y)</view>
+  <view>V8(X, Y) :- A8(X, Y)</view>
+  <view>V9(X, Y) :- A9(X, Y)</view>
+  <view>V10(X, Y) :- A10(X, Y)</view>
+  <view>V11(X, Y) :- A11(X, Y)</view>
+  <view>V12(X, Y) :- A12(X, Y)</view>
+  <view>V13(X, Y) :- A1(X, Y)</view>
+  <view>V14(X, Y) :- A2(X, Y)</view>
+  <view>V15(X, Y) :- A3(X, Y)</view>
+  <view>V16(X, Y) :- A4(X, Y)</view>
+  <view>V17(X, Y) :- A5(X, Y)</view>
+  <view>V18(X, Y) :- A6(X, Y)</view>
+  <view>V19(X, Y) :- A7(X, Y)</view>
+  <view>V20(X, Y) :- A8(X, Y)</view>
+  <view>V21(X, Y) :- A9(X, Y)</view>
+  <view>V22(X, Y) :- A10(X, Y)</view>
+  <view>V23(X, Y) :- A11(X, Y)</view>
+  <view>V24(X, Y) :- A12(X, Y)</view>
+  <information/>
+ </testcase>
+ <testcase>
+  <id>11</id>
+  <query>Q(X, Y) :- A1(X, X1), A2(X1,X2), A3(X2,X3), A4(X3,X4), A5(X4,X5), A6(X5,X6), A7(X6,X7), A8(X7,X8), A9(X8,X9), A10(X9,Y)</query>
+  <view>V1(X, Y) :- A1(X, X1), A2(X1,X2), A3(X2,X3), A4(X3,X4), A5(X4,X5), A6(X5,X6), A7(X6,X7), A8(X7,X8), A9(X8,X9), A10(X9,Y)</view>
+  <view>V2(X, Y) :- A1(X, X1), A2(X1,X2), A3(X2,X3), A4(X3,X4), A5(X4,X5), A6(X5,X6), A7(X6,X7), A8(X7,X8), A9(X8,X9), A10(X9,Y)</view>
+  <view>V3(X, Y) :- A1(X, X1), A2(X1,X2), A3(X2,X3), A4(X3,X4), A5(X4,X5), A6(X5,X6), A7(X6,X7), A8(X7,X8), A9(X8,X9), A10(X9,Y)</view>
+  <view>V4(X, Y) :- A1(X, X1), A2(X1,X2), A3(X2,X3), A4(X3,X4), A5(X4,X5), A6(X5,X6), A7(X6,X7), A8(X7,X8), A9(X8,X9), A10(X9,Y)</view>
+  <information/>
+ </testcase>
+ <testcase>
+  <id>12</id>
+  <query>Q(X, Y) :- A1(X, X1), A2(X1,X2), A3(X2,X3), A4(X3,X4), A5(X4,X5), A6(X5,X6), A7(X6,X7), A8(X7,X8), A9(X8,X9), A10(X9,Y)</query>
+  <view>V1(X, Y) :- A1(X, X1), A2(X1,X2), A3(X2,X3), A4(X3,X4), A5(X4,X5), A6(X5,X6), A7(X6,X7), A8(X7,X8), A9(X8,X9), A10(X9,Y)</view>
+  <view>V2(X, Y) :- A1(X, X1), A2(X1,X2), A3(X2,X3), A4(X3,X4), A5(X4,X5), A6(X5,X6), A7(X6,X7), A8(X7,X8), A9(X8,X9), A10(X9,Y)</view>
+  <view>V3(X, Y) :- A1(X, X1), A2(X1,X2), A3(X2,X3), A4(X3,X4), A5(X4,X5), A6(X5,X6), A7(X6,X7), A8(X7,X8), A9(X8,X9), A10(X9,Y)</view>
+  <view>V4(X, Y) :- A1(X, X1), A2(X1,X2), A3(X2,X3), A4(X3,X4), A5(X4,X5), A6(X5,X6), A7(X6,X7), A8(X7,X8), A9(X8,X9), A10(X9,Y)</view>
+  <view>V5(X, Y) :- A1(X, X1), A2(X1,X2), A3(X2,X3), A4(X3,X4), A5(X4,X5), A6(X5,X6), A7(X6,X7), A8(X7,X8), A9(X8,X9), A10(X9,Y)</view>
+  <view>V6(X, Y) :- A1(X, X1), A2(X1,X2), A3(X2,X3), A4(X3,X4), A5(X4,X5), A6(X5,X6), A7(X6,X7), A8(X7,X8), A9(X8,X9), A10(X9,Y)</view>
+  <view>V7(X, Y) :- A1(X, X1), A2(X1,X2), A3(X2,X3), A4(X3,X4), A5(X4,X5), A6(X5,X6), A7(X6,X7), A8(X7,X8), A9(X8,X9), A10(X9,Y)</view>
+  <view>V8(X, Y) :- A1(X, X1), A2(X1,X2), A3(X2,X3), A4(X3,X4), A5(X4,X5), A6(X5,X6), A7(X6,X7), A8(X7,X8), A9(X8,X9), A10(X9,Y)</view>
+  <view>V9(X, Y) :- A1(X, X1), A2(X1,X2), A3(X2,X3), A4(X3,X4), A5(X4,X5), A6(X5,X6), A7(X6,X7), A8(X7,X8), A9(X8,X9), A10(X9,Y)</view>
+  <view>V10(X, Y) :- A1(X, X1), A2(X1,X2), A3(X2,X3), A4(X3,X4), A5(X4,X5), A6(X5,X6), A7(X6,X7), A8(X7,X8), A9(X8,X9), A10(X9,Y)</view>
+  <view>V11(X, Y) :- A1(X, X1), A2(X1,X2), A3(X2,X3), A4(X3,X4), A5(X4,X5), A6(X5,X6), A7(X6,X7), A8(X7,X8), A9(X8,X9), A10(X9,Y)</view>
+  <view>V12(X, Y) :- A1(X, X1), A2(X1,X2), A3(X2,X3), A4(X3,X4), A5(X4,X5), A6(X5,X6), A7(X6,X7), A8(X7,X8), A9(X8,X9), A10(X9,Y)</view>
+  <information/>
+ </testcase>
+ <testcase>
+  <id>13</id>
+  <query>Q(X, Y) :- A1(X, Y), A2(X,Y)</query>
+  <view>V1(X, Y) :- A1(X, Y), A2(X,Y)</view>
+  <view>V2(X, Y) :- A1(X, Y), A2(X,Y)</view>
+  <information/>
+ </testcase>
+</testcases>

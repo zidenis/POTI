@@ -1,0 +1,137 @@
+<preferences>
+	<preference id = "1">
+		<view name = "V1" rank = "0.9"/>
+		<view name = "V2" rank = "0.3"/>
+		<view name = "V3" rank = "0.4"/>
+		<view name = "V4" rank = "0.4"/>  
+		<view name = "V5" rank = "0.2"/> 
+		<view name = "V6" rank = "0.9"/>
+		<view name = "V7" rank = "0.9"/> 
+		<view name = "V8" rank = "0.9"/>     
+	</preference>
+	<preference id = "2">
+		<view name = "V4" rank = "0.2"/>
+		<view name = "V5" rank = "0.3"/>
+		<view name = "V6" rank = "0.4"/>
+	</preference>
+	<preference id = "3">
+		<view name = "V1" rank = "0.2"/>
+		<view name = "V2" rank = "0.3"/>
+		<view name = "V3" rank = "0.3"/>
+	</preference>
+	<preference id = "4">
+		<view name = "V" rank = "0.2"/>
+	</preference>
+	<preference id = "5">
+		<view name = "V1" rank = "0.2"/>
+		<view name = "V2" rank = "0.3"/>
+		<view name = "V3" rank = "0.3"/>
+		<view name = "V4" rank = "0.2"/>
+	</preference>
+	<preference id = "6">
+		<view name = "V1" rank = "0.2"/>
+		<view name = "V2" rank = "0.3"/>
+		<view name = "V3" rank = "0.3"/>
+		<view name = "V4" rank = "0.2"/>
+	</preference>
+	<preference id = "7">
+		<view name = "V1" rank = "0.2"/>
+		<view name = "V2" rank = "0.3"/>
+		<view name = "V3" rank = "0.3"/>
+		<view name = "V4" rank = "0.2"/>
+		<view name = "V5" rank = "0.2"/>
+		<view name = "V6" rank = "0.3"/>
+		<view name = "V7" rank = "0.3"/>
+		<view name = "V8" rank = "0.2"/>
+		<view name = "V9" rank = "0.2"/>
+		<view name = "V10" rank = "0.3"/>
+		<view name = "V11" rank = "0.3"/>
+		<view name = "V12" rank = "0.2"/>
+	</preference>
+	<preference id = "8">
+		<view name = "V1" rank = "0.2"/>
+		<view name = "V2" rank = "0.3"/>
+		<view name = "V3" rank = "0.3"/>
+		<view name = "V4" rank = "0.2"/>
+		<view name = "V5" rank = "0.3"/>
+		<view name = "V6" rank = "0.3"/>
+		<view name = "V7" rank = "0.3"/>
+		<view name = "V8" rank = "0.2"/>
+		<view name = "V9" rank = "0.2"/>
+		<view name = "V10" rank = "0.3"/>
+		<view name = "V11" rank = "0.3"/>
+		<view name = "V12" rank = "0.2"/>
+		<view name = "V13" rank = "0.3"/>
+		<view name = "V14" rank = "0.3"/>
+		<view name = "V15" rank = "0.3"/>
+		<view name = "V16" rank = "0.2"/>
+		<view name = "V17" rank = "0.9"/>
+		<view name = "V18" rank = "0.3"/>
+		<view name = "V19" rank = "0.3"/>
+		<view name = "V20" rank = "0.2"/>
+	</preference>
+	<preference id = "9">
+		<view name = "V1" rank = "0.2"/>
+		<view name = "V2" rank = "0.3"/>
+		<view name = "V3" rank = "0.3"/>
+		<view name = "V4" rank = "0.2"/>
+		<view name = "V5" rank = "0.3"/>
+		<view name = "V6" rank = "0.3"/>
+		<view name = "V7" rank = "0.3"/>
+		<view name = "V8" rank = "0.2"/>
+		<view name = "V9" rank = "0.2"/>
+		<view name = "V10" rank = "0.3"/>
+		<view name = "V11" rank = "0.3"/>
+		<view name = "V12" rank = "0.2"/>
+	</preference>
+	<preference id = "10">
+		<view name = "V1" rank = "0.2"/>
+		<view name = "V2" rank = "0.3"/>
+		<view name = "V3" rank = "0.3"/>
+		<view name = "V4" rank = "0.2"/>
+		<view name = "V5" rank = "0.3"/>
+		<view name = "V6" rank = "0.3"/>
+		<view name = "V7" rank = "0.3"/>
+		<view name = "V8" rank = "0.2"/>
+		<view name = "V9" rank = "0.2"/>
+		<view name = "V10" rank = "0.3"/>
+		<view name = "V11" rank = "0.3"/>
+		<view name = "V12" rank = "0.2"/>
+		<view name = "V13" rank = "0.3"/>
+		<view name = "V14" rank = "0.3"/>
+		<view name = "V15" rank = "0.3"/>
+		<view name = "V16" rank = "0.2"/>
+		<view name = "V17" rank = "0.9"/>
+		<view name = "V18" rank = "0.3"/>
+		<view name = "V19" rank = "0.3"/>
+		<view name = "V20" rank = "0.2"/>
+		<view name = "V21" rank = "0.2"/>
+		<view name = "V22" rank = "0.2"/>
+		<view name = "V23" rank = "0.2"/>
+		<view name = "V24" rank = "0.2"/>
+	</preference>
+	<preference id = "11">
+		<view name = "V1" rank = "0.2"/>
+		<view name = "V2" rank = "0.3"/>
+		<view name = "V3" rank = "0.3"/>
+		<view name = "V4" rank = "0.2"/>
+	</preference>
+	<preference id = "12">
+		<view name = "V1" rank = "0.2"/>
+		<view name = "V2" rank = "0.3"/>
+		<view name = "V3" rank = "0.3"/>
+		<view name = "V4" rank = "0.2"/>
+		<view name = "V5" rank = "0.3"/>
+		<view name = "V6" rank = "0.3"/>
+		<view name = "V7" rank = "0.3"/>
+		<view name = "V8" rank = "0.2"/>
+		<view name = "V9" rank = "0.2"/>
+		<view name = "V10" rank = "0.3"/>
+		<view name = "V11" rank = "0.3"/>
+		<view name = "V12" rank = "0.2"/>
+	</preference>
+	<preference id = "13">
+		<view name = "V1" rank = "0.2"/>
+		<view name = "V2" rank = "0.2"/>
+	</preference>
+</preferences>
